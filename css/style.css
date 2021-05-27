@@ -60,7 +60,7 @@ header ul{
 }
 
 header ul li{
-    margin:10px;
+    margin:5px;
     padding:5px;
     list-style-type:none;
     transition: 1s;
@@ -93,6 +93,7 @@ section.section-main div.img-bg-div{
     background-image:url(../img/desktop1.jpg);
     background-size:cover;
     background-position:center;
+    background-repeat: no-repeat;
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -240,7 +241,7 @@ div.imgs-certificate{
     justify-content: center;
 }
 div.img-certificate1{
-    width:300px;
+    width:400px;
     height:200px;
     margin:20px;
     background-image:url(../img/cert-1014-2982509.jpg);
@@ -249,7 +250,7 @@ div.img-certificate1{
     background-position:center;
 }
 div.img-certificate2{
-    width:300px;
+    width:400px;
     height:200px;
     margin:20px;
     background-image:url(../img/cert-1023-2982509.jpg);
@@ -510,6 +511,7 @@ footer .footer-connected i{
     section.tecnologias div.icons-tecnologias{
         width: 100%;
         height:400px;
+        margin-bottom:10px;
         float:none;
         display:block;
         align-items: center;
@@ -561,6 +563,44 @@ footer .footer-connected i{
         width:100px;
         height:100px;
         background-image:url(../img/tecFigma.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+
+
+
+
+    .certificate{
+        width:100%;
+    }
+    .certificate h2{
+        text-align: center;
+        font-size:40px;
+    }
+    div.imgs-certificate{
+        margin:0 auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.img-certificate1{
+        width:400px;
+        height:400px;
+        margin:10px;
+        margin:0 auto;
+        background-image:url(../img/cert-1014-2982509.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }
+    div.img-certificate2{
+        width:400px;
+        height:400px;
+        margin:10px;
+        margin:0 auto;
+        background-image:url(../img/cert-1023-2982509.jpg);
         background-repeat:no-repeat;
         background-size:cover;
         background-position:center;
