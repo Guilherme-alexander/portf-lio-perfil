@@ -586,24 +586,29 @@ footer .footer-connected i{
     }
 
     div.img-certificate1{
-        width:400px;
-        height:400px;
-        margin:10px;
-        margin:0 auto;
+        width:300px;
+        height:220px;
+        margin:5px auto;
         background-image:url(../img/cert-1014-2982509.jpg);
         background-repeat:no-repeat;
-        background-size:cover;
+        background-size:100% 100%;
         background-position:center;
     }
     div.img-certificate2{
-        width:400px;
-        height:400px;
-        margin:10px;
-        margin:0 auto;
+        width:300px;
+        height:220px;
+        margin:5px auto;
         background-image:url(../img/cert-1023-2982509.jpg);
         background-repeat:no-repeat;
         background-size:cover;
         background-position:center;
+    }
+    section.section-main div.img-bg-div{
+        background-image:url(../img/desktop1.jpg);
+        background-size:cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        flex-wrap:nowrap;
     }
 
     section.section-main div.img-bg-div div.img-perfil{
