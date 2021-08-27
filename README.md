@@ -12,4 +12,4 @@
  * Jquery
 
 # preview Imagem 
-![Image](https://github.com/Guilherme-alexander/portf-lio-perfil/blob/main/Captura%20da%20Web_29-5-2021_94638_guilherme-alexander.github.io.jpeg)
+![Image](https://github.com/Guilherme-alexander/portf-lio-perfil/blob/main/Captura%20da%20Web_30-7-2021_74526_.jpeg)
