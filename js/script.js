@@ -1,64 +1,54 @@
-// VanillaTilt.init(document.querySelector(".img-perfil"), {
-//     max: 25,
-//     speed: 400
-// });
+//JQUERY
 
-
-//scroll event
-
-const menuItems = document.querySelectorAll('header.menu a[href^="#"]');
-
-menuItems.forEach(item => {
-  item.addEventListener('click', scrollToIdOnClick);
+//menu Responsivo mobile
+$('.fa-bars').click(function(){
+    $('.menu-mobile').find('ul').slideToggle();
 })
 
-function getScrollTopByHref(element) {
-  const id = element.getAttribute('href');
-  return document.querySelector(id).offsetTop;
-}
-
-function scrollToIdOnClick(event) {
-  event.preventDefault();
-  const to = getScrollTopByHref(event.target);
-  scrollToPosition(to);
-}
-
-function scrollToPosition(to) {
-  // window.scroll({
-  //   top: to,
-  //   behavior: "smooth",
-  // });
-  smoothScrollTo(0, to);
-}
-
-/**
- * Smooth scroll animation
- * @param {int} endX: destination x coordinate
- * @param {int} endY: destination y coordinate
- * @param {int} duration: animation duration in ms
- */
-function smoothScrollTo(endX, endY, duration) {
-  const startX = window.scrollX || window.pageXOffset;
-  const startY = window.scrollY || window.pageYOffset;
-  const distanceX = endX - startX;
-  const distanceY = endY - startY;
-  const startTime = new Date().getTime();
-
-  duration = typeof duration !== 'undefined' ? duration : 400;
-
-  // Easing function
-  const easeInOutQuart = (time, from, distance, duration) => {
-    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-    return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
-  };
-
-  const timer = setInterval(() => {
-    const time = new Date().getTime() - startTime;
-    const newX = easeInOutQuart(time, startX, distanceX, duration);
-    const newY = easeInOutQuart(time, startY, distanceY, duration);
-    if (time >= duration) {
-      clearInterval(timer);
+//menu filtro portifólio
+$(document).on('click','.menu-portfolio p',function(){
+    $(this).addClass('selected').siblings().removeClass('selected')
+    // console.log(this)
+    // console.log(this.id)
+    if(this.id == 'frontEnd'){
+        $('.box-works-single [value=frontEnd]').css('display','block')
+        $('.box-works-single [value=designer]').css('display','none')
     }
-    window.scroll(newX, newY);
-  }, 1000 / 60); // 60 fps
-};
+    if(this.id == 'designer'){
+        $('.box-works-single [value=designer]').css('display','block')
+        $('.box-works-single [value=frontEnd]').css('display','none')
+    }
+    if(this.id == 'aii'){
+        $('.box-works-single [value=designer]').css('display','block')
+        $('.box-works-single [value=frontEnd]').css('display','block')
+        
+    }
+    if(this.id == 'code'){
+        // console.log('ok')
+    }    
+})
+
+
+// JAVASCRIPT
+
+// Slider works
+var lastIndex = 0;
+
+    var imagem = document.querySelectorAll('.box-work')
+    var bullets = document.querySelectorAll('.bullets-single')
+
+    imagem.forEach((item,index)=>{
+        bullets[index].addEventListener('click',()=>{
+            let lastImage = imagem[lastIndex]
+            let actualImage = imagem[index]
+
+            bullets[lastIndex].classList.remove('active-bullets')
+            bullets[index].classList.add('active-bullets')
+
+            lastImage.style.opacity = 0;
+            actualImage.style.opacity = 1;
+            lastIndex = index;
+        })
+      
+});
+
