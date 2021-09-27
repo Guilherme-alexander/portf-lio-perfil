@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <div class="flex">
         <h2 class="name">Guilherme Alexander</h2>
 
@@ -24,20 +24,20 @@
 
         <nav class="menu-desktop">
             <ul>
-                <li class="menu-1"><a href="#">Home</a></li>
-                <li class="menu-2"><a href="#">Abour</a></li>
-                <li class="menu-3"><a href="#">Contact</a></li>
-                <li class="menu-4"><a href="#">Works</a></li>
+                <li class="menu-1"><a data-transition="pop" href="#home">Home</a></li>
+                <li class="menu-2"><a data-transition="pop" href="#about">About</a></li>
+                <li class="menu-4"><a data-transition="pop" href="#works">Works</a></li>
+                <li class="menu-3"><a data-transition="pop" href="#contact">Contact</a></li>
             </ul>
         </nav>
         </div><!-- FLEX  -->
 
         <nav class="menu-mobile">
             <ul>
-                <li><a href="https://www.google.com.br/">Home</a></li>
-                <li><a href="#">Abour</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Works</a></li>
+                <li><a data-transition="pop" href="#home">Home</a></li>
+                <li><a data-transition="pop" href="#about">Abour</a></li>
+                <li><a data-transition="pop" href="#works">Works</a></li>
+                <li><a data-transition="pop" href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -95,7 +95,7 @@
         </div><!-- w100 -->
     </header>
     
-    <section class="Qualification">
+    <section id="about" class="Qualification">
         <div class="container">
             <div class="titulo-section">
                 <p>Experience & Education</p>
@@ -132,7 +132,9 @@
         </div><!-- container -->
     </section>
 
-    <section class="Portfolio">
+
+
+    <section id="works" class="Portfolio">
         <div class="container">
             <div class="titulo-section">
                 <p>Project & Designer</p>
@@ -154,7 +156,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Technology Agency</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web1.png"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="designer" class="box-work">
@@ -163,7 +165,7 @@
                     </div>
                     <p>Designer</p>
                     <h2>Designer Ithe Fast Food</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/frame.png"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work">
@@ -172,7 +174,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Dentist Page</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web8.jpeg"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work">
@@ -181,7 +183,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Dealership Page</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web7.jpeg"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work">
@@ -190,7 +192,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Technology Services</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web6.jpeg"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work">
@@ -199,7 +201,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Technology Agency</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web9.jpeg"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work">
@@ -208,7 +210,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Page For Students</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web3.jpeg"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work">
@@ -217,7 +219,7 @@
                     </div>
                     <p>front-end</p>
                     <h2>Travel Page</h2>
-                    <a href=""><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web4.jpeg"><p id="underline">View Detalis</p></a>
                 </div><!-- box-work -->
             </div><!-- box-works-single -->
 
@@ -234,7 +236,9 @@
         </div><!-- container -->
     </section><!-- Portfolio -->
 
-    <section class="contact">
+
+
+    <section id="contact" class="contact">
         <div class="titulo-section">
             <p>Number & Social Media</p>
             <h2>Contact</h2>
@@ -303,6 +307,7 @@
     <!-- Script -->
     <script src="js/Jquery.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/menu-scroll.js" defer></script>
 
 </body>
 </html>
