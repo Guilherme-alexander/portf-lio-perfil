@@ -17,6 +17,6 @@ var lastIndex = 0;
             lastImage.style.opacity = 0;
             actualImage.style.opacity = 1;
             lastIndex = index;
+            
         })
-      
 });
