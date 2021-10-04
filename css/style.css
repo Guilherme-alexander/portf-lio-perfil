@@ -51,6 +51,7 @@ h2.name{
 
 nav.menu-mobile{
     width:100%;
+    user-select: none;
 }
 nav.menu-mobile > ul{
     display:none;
@@ -59,6 +60,11 @@ nav.menu-mobile > ul{
     background-color:#fff;
     list-style-type:none;
 }
+
+nav.menu-mobile > ul.active{
+    display: block !important;
+}
+
 nav.menu-mobile > ul > li{
     display:none;
     width:100%;
@@ -297,7 +303,6 @@ section.Portfolio{
     transition:1s;
 }
 
-/* bug */
 /* .menu-portfolio p.selected{
     color:var(--color1);
     text-decoration:underline;
@@ -318,9 +323,10 @@ section.Portfolio{
     box-shadow: 3px 3px 3px #ccc8;
 }
 
-.box-work.ativo{
-    opacity:1;
+.box-work.opacity{
+    opacity:1 !important;
 }
+
 .box-work .image{
     width:250px;
     height:250px;
@@ -530,9 +536,12 @@ div.copy{
         position:absolute;
         top:50%;
         left:50%;
+        display:block;
+        opacity:0;
         transform:translate(-50%,-50%);
         transition:1s;
     }
+    
 
 /* btn slider */
     .bullets{
