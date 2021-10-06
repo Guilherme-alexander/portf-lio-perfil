@@ -78,6 +78,10 @@ nav.menu-mobile > ul > li > a{
     color:black;
     display:block;
     cursor: pointer;
+    text-decoration:none;
+}
+nav.menu-mobile > ul > li:hover{
+    background-color: #bbb;
 }
 
 nav.menu-desktop{
@@ -88,9 +92,32 @@ nav.menu-desktop ul{
     list-style-type:none;
 }
 nav.menu-desktop ul li{
+    position:relative;
     display:inline-block;
     transition:1s;
     margin:0 10px;
+}
+
+nav.menu-desktop ul li:after{
+    content:'ok';
+    width:0px;
+    height:3px;
+    position: absolute;
+    top:25px;
+    left:0;
+    border-radius:10px;
+    background-color: #fff;
+    transition:.5s ease-out;
+}
+nav.menu-desktop ul li:hover:after{
+    content:'ok';
+    width:45px;
+    height:3px;
+    position: absolute;
+    top:25px;
+    left:0;
+    border-radius:10px;
+    background-color: #fff;
 }
 
 nav.menu-desktop ul li a{
@@ -234,8 +261,10 @@ section.Qualification{
     transition:1s;
 }
 .titulo-section > h2{
+    display:inline-block;
     font-size:38px;
     transition:1s;
+    border-bottom:1px solid #000;
 }
 
 .titulo{
@@ -259,23 +288,24 @@ section.Qualification{
     margin-top:25px;
     transition:1s;
 }
+
 .box-Education:nth-of-type(2){
     margin-top:55px;
 }
 .box-Education:nth-of-type(6){
-    margin-bottom:80px;
+    margin-bottom:20px;
 }
 
 .box-Education h3{
     padding:5px 0;
 }
+
 .box-Education p{
     display: inline-block;
     padding:10px 0;
 }
 .box-Education p.data{
     display: inline-block;
-    margin-left:80px;
 }
 .box-Education p.data span{
     color: var(--color1);
@@ -287,7 +317,7 @@ section.Portfolio{
 }
 
 .menu-portfolio{
-    margin:100px 0 25px 0;
+    margin:50px 0 25px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -321,6 +351,10 @@ section.Portfolio{
     display:block;
     opacity:1;
     box-shadow: 3px 3px 3px #ccc8;
+    transition:1s;
+}
+.box-work:hover{
+    transform: scale(1.1);
 }
 
 .box-work.opacity{
@@ -337,6 +371,7 @@ section.Portfolio{
     height:250px;
     object-fit:cover;
     object-position:top;
+    border-bottom:3px solid #c2c2c278;
 }
 
 .box-work p{
@@ -349,7 +384,7 @@ section.Portfolio{
 .box-work p#underline{
     text-decoration: underline;
     cursor: pointer;
-    color:#000;
+    color:var(--color1);
 }
 
 section.contact{
@@ -378,7 +413,7 @@ section.contact{
     color:var(--color1);
 }
 .info-contact p{
-    margin:5px 2%;
+    margin:5px 1%;
 }
 
 .w50-info{
@@ -421,15 +456,32 @@ footer p{
     font-size:18px;
 }
 
+footer > a.plataforma{
+    font-family:'roboto';
+    font-size:14px;
+    font-weight:normal;
+    color:var(--color1);
+    padding:5px;
+    margin:8px 0;
+    border-radius:4px;
+    background-color: #000;
+}
+footer a.plataforma:hover{
+    color:#fff;
+    background-color: #318ADC;
+}
+
 div.copy{
     width:100%;
-    padding:5px;
+    padding:20px;
     text-align: center;
-    background-color:var(--firstcolor);
+    background-color: #000;
+    border-top:2px solid var(--firstcolor);
 }
 .copy p{
     color:white;
 }
+
 
 /* 
 
