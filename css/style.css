@@ -63,6 +63,7 @@ nav.menu-mobile > ul{
 
 nav.menu-mobile > ul.active{
     display: block !important;
+    transition:1s;
 }
 
 nav.menu-mobile > ul > li{
@@ -111,7 +112,7 @@ nav.menu-desktop ul li:after{
 }
 nav.menu-desktop ul li:hover:after{
     content:'ok';
-    width:45px;
+    width:100%;
     height:3px;
     position: absolute;
     top:25px;
@@ -203,7 +204,8 @@ nav.menu-desktop ul li a{
     transition:1s;
 }
 .social-media .fa:hover{
-    color:var(--color1);
+    text-shadow:0px 0px 10px #fffff0,
+                0px 0px 20px #fffff0;
 }
 
 .perfil.left{
@@ -246,6 +248,7 @@ nav.menu-desktop ul li a{
 }
 section.Qualification{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -254,6 +257,7 @@ section.Qualification{
 
 .titulo-section{
     text-align: center;
+    margin-left:10px;
 }
 .titulo-section > p{
     font-weight:bold;
@@ -282,34 +286,26 @@ section.Qualification{
 
 .box-Education{
     width:350px;
-    height:70px;
+    height:90px;
     font-family: 'Raleway', sans-serif;
     border-bottom:2px solid #000;
     margin-top:25px;
     transition:1s;
 }
 
-.box-Education:nth-of-type(2){
-    margin-top:55px;
+.box-education-info{
+    display:flex;
+    justify-content: space-between;
 }
-.box-Education:nth-of-type(6){
-    margin-bottom:20px;
-}
-
-.box-Education h3{
-    padding:5px 0;
+.box-education-info span{
+    color:var(--color1);
+    font-weight:bold;
+    margin-left:10px;
 }
 
 .box-Education p{
-    display: inline-block;
+    display:inline-block;
     padding:10px 0;
-}
-.box-Education p.data{
-    display: inline-block;
-}
-.box-Education p.data span{
-    color: var(--color1);
-    margin-left:8px;
 }
 
 section.Portfolio{
@@ -329,14 +325,14 @@ section.Portfolio{
     margin:0 10px;
     font-size:18px;
     font-weight:bold;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition:1s;
 }
 
 /* .menu-portfolio p.selected{
     color:var(--color1);
     text-decoration:underline;
-} */
+}  */
 
 .box-works-single{
     display:flex;
@@ -348,13 +344,11 @@ section.Portfolio{
 
 .box-work{
     margin:15px;
+    padding:10px;
     display:block;
     opacity:1;
     box-shadow: 3px 3px 3px #ccc8;
     transition:1s;
-}
-.box-work:hover{
-    transform: scale(1.1);
 }
 
 .box-work.opacity{
@@ -374,17 +368,17 @@ section.Portfolio{
     border-bottom:3px solid #c2c2c278;
 }
 
+.box-work a{
+    font-size:12px;
+    padding:10px 0;  
+}
+
 .box-work p{
     font-size:12px;
-    margin:10px 0;
+    margin:10px 0;  
 }
 .box-work h2{
     font-size:18px;
-}
-.box-work p#underline{
-    text-decoration: underline;
-    cursor: pointer;
-    color:var(--color1);
 }
 
 section.contact{
@@ -410,10 +404,11 @@ section.contact{
 }
 .info-contact i{
     font-size:40px;
-    color:var(--color1);
+    color:#010203;
 }
 .info-contact p{
     margin:5px 1%;
+    color:#010203;
 }
 
 .w50-info{
@@ -432,8 +427,9 @@ section.contact{
 }
 .info-chat .social-media a > i.fa{
     font-size:30px;
-    color:black;
+    color:#010203;
 }
+
 
 footer{
     width:100%;
@@ -481,7 +477,6 @@ div.copy{
 .copy p{
     color:white;
 }
-
 
 /* 
 
@@ -555,6 +550,7 @@ div.copy{
 
     nav.menu-mobile > ul > li{
         display:inline-block;
+        transition:2s;
     }
     nav.menu-mobile > ul > li > a{
         display:inline-block;
@@ -572,7 +568,7 @@ div.copy{
     .info-contact{width:100%;}
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:660px){
     
     .menu-portfolio{display:none;}
 
@@ -593,24 +589,29 @@ div.copy{
         transform:translate(-50%,-50%);
         transition:1s;
     }
+
+    .box-work a{
+        display: none;
+    }
     
 
 /* btn slider */
     .bullets{
+
         text-align: center;
     }
 
     .bullets-single{
         margin:0 8px;
-        border-radius:10px;
+        border-radius:15px;
         cursor:pointer;
         display:inline-block;
-        width:20px;
-        height:20px;
+        width:25px;
+        height:25px;
         background-color:#ccc;
     }
 
-    .active-bullets{
+    .bullets-single.active-bullets{
         background-color:var(--color1);
     }
 
@@ -630,13 +631,15 @@ div.copy{
         height:120px;
         text-align: center;
     }
-    .box-Education p.data{
-        display: inline-block;
-        margin-left:0;
-    }
-    .box-Education p.data span{
-        color: var(--color1);
-        margin-left:8;
+
+    .bullets-single{
+        margin:5px 10px;
+        border-radius:20px;
+        cursor:pointer;
+        display:inline-block;
+        width:30px;
+        height:30px;
+        background-color:#ccc;
     }
     
 }

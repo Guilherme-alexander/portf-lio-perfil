@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>Perfil Profissional</title>
 </head>
@@ -18,13 +20,13 @@
     
     <header id="home">
         <div class="flex">
-        <h2 class="name">Guilherme Alexander</h2>
+        <h2 class="name" data-aos="zoom-in">Guilherme Alexander</h2>
 
         <i class="fa fa-bars" aria-hidden="true"></i>
 
         <nav class="menu-desktop">
             <ul>
-                <li class="menu-1"><a data-transition="pop" href="#home">Home</a></li>
+                <li class="menu-1"><a data-transition="pop" href="#home">Perfil</a></li>
                 <li class="menu-2"><a data-transition="pop" href="#about">About</a></li>
                 <li class="menu-4"><a data-transition="pop" href="#works">Works</a></li>
                 <li class="menu-3"><a data-transition="pop" href="#contact">Contact</a></li>
@@ -34,7 +36,7 @@
 
         <nav class="menu-mobile">
             <ul>
-                <li><a data-transition="pop" href="#home">Home</a></li>
+                <li><a data-transition="pop" href="#home">Perfil</a></li>
                 <li><a data-transition="pop" href="#about">Abour</a></li>
                 <li><a data-transition="pop" href="#works">Works</a></li>
                 <li><a data-transition="pop" href="#contact">Contact</a></li>
@@ -42,7 +44,7 @@
         </nav>
 
         <div class="w100">
-            <div class="w50">
+            <div class="w50" data-aos="zoom-in">
                 <div class="perfil ">
                     <p>Hello My Name Is</p>
                     <h2>Guilherme Alexander</h2>
@@ -61,12 +63,13 @@
             </div><!-- w50 -->
 
             <div class="bg-perfil ">
-                <img src="img/perfil 3.png" alt="img perfil">
+                <img data-aos="fade-right" src="img/perfil 3.png" alt="img perfil">
                 <div class="perfil left">
                     <p>Hello My Name Is</p>
                     <h2>Guilherme Alexander</h2>
                     <h3>Im a Front - End Developer</h3>
                     <button><a href="pdf/Guilherme Alexander Currículo Front-End.pdf" download="Currículo Front-End" type="application/pdf">Download CV</a></button>
+
                     <div id="img" class="social-media">
                         <a target="_blank" href="https://www.instagram.com/guilhermealexander_dev/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
 
@@ -78,7 +81,7 @@
                     </div><!-- social-media -->
                 </div><!-- perfil left -->
 
-                    <div class="list-perfil">
+                    <div class="list-perfil" data-aos="zoom-in">
                         <ul>
                             <li>Web designer</li>
                             <li>UI / UX</li>
@@ -105,35 +108,46 @@
                 </div><!-- titulo -->
             </div><!-- titulo-section -->
 
-            <div class="box-Education">
-                <h3>Design para Web </h3> 
-                <p>Dank Code</p><p style="margin-left:115px;" class="data"> 7 Hora <span>Concluída</span></p>  
+            <div class="box-Education" 
+            data-aos="fade-right">
+                <h3>Design para Web </h3>
+                <div class="box-education-info">
+                    <p>Dank Code</p>
+                    <p> 7 Hora <span>Concluída</span></p> 
+                </div><!-- box-education-info -->
+                <a target="_blank" href="https://cursos.dankicode.com/certificados?view=6070">Link Certificatin</a> 
             </div><!-- box-Education -->
 
-            <div class="box-Education">
+            <div class="box-Education" data-aos="fade-right">
                 <h3>Lógica de Programação </h3>
-                <p>Dank Code</p><p style="margin-left:115px;" class="data"> 6 Hora <span>Concluída</span></p>  
+                <div class="box-education-info">
+                    <p>Dank Code</p>
+                    <p> 6 Hora <span>Concluída</span></p> 
+                </div><!-- box-education-info -->
+                <a target="_blank" href="https://cursos.dankicode.com/certificados?view=7065">Link Certificatin</a> 
             </div><!-- box-Education -->
 
-            <div class="box-Education">
+            <div class="box-Education" data-aos="fade-right">
                 <h3>Web Design Express </h3>
-                <p>Dank Code</p><p style="margin-left:115px;" class="data"> 13 Hora <span>Concluída</span></p>  
+                <div class="box-education-info">
+                    <p>Dank Code</p>
+                    <p> 13 Hora <span>Concluída</span></p>  
+                </div><!-- box-education-info -->
+                <a target="_blank" href="https://cursos.dankicode.com/certificados?view=5536">Link Certificatin</a> 
             </div><!-- box-Education -->
 
-            <div class="box-Education">
+            <div class="box-Education" data-aos="fade-right">
                 <h3>Git e GitHub </h3>
-                <p>Curso Em Video</p><p style="margin-left:80px;" class="data"> 20 Hora <span>Concluída</span></p>  
-            </div><!-- box-Education -->
-
-            <div class="box-Education">
-                <h3>HTML</h3>
-                <p>Curso em Video</p><p style="margin-left:80px;" class="data"> 40 Hora <span>Concluída</span></p>  
+                <div class="box-education-info">
+                    <p>Curso Em Video</p>
+                    <p> 20 Hora <span>Concluída</span></p>  
+                </div><!-- box-education-info -->
+                <a target="_blank" href="https://www.cursoemvideo.com/certificates/certificado/?course_id=41356&cert-nonce=daf8d23173">Link Certificatin</a> 
             </div><!-- box-Education -->
 
         </div><!-- container -->
+
     </section>
-
-
 
     <section id="works" class="Portfolio">
         <div class="container">
@@ -151,40 +165,40 @@
 
             <div class="box-works-single">
                 
-                <div value="frontEnd" class="box-work opacity" style="z-index: 1;">
+                <div value="frontEnd" class="box-work opacity" style="z-index: 1;" >
                     <div class="image">
                         <img src="img/web1.png" alt="imagem trabalho">
                     </div>
                     <p>front-end</p>
                     <h2>Technology Agency</h2>
-                    <a target="_blank" href="img/web1.png"><p id="underline">View Detalis</p></a>
+                    <a target="_blank"  href="img/web1.png">View Detalis</a>
                 </div><!-- box-work -->
 
-                <div value="designer" class="box-work" style="z-index: 2;">
+                <div value="designer" class="box-work" style="z-index: 2;" >
                     <div class="image">
                         <img src="img/frame.png" alt="imagem trabalho" >
                     </div>
                     <p>Designer</p>
                     <h2>Designer Ithe Fast Food</h2>
-                    <a target="_blank" href="https://www.figma.com/proto/2SNguqNjMrQQbWVLnCr9SV/Designer-ifood?scaling=scale-down&page-id=0%3A1&node-id=3%3A35"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="https://www.figma.com/proto/2SNguqNjMrQQbWVLnCr9SV/Designer-ifood?scaling=scale-down&page-id=0%3A1&node-id=3%3A35">View Detalis</a>
                 </div><!-- box-work -->
 
-                <div value="frontEnd" class="box-work" style="z-index: 3;">
+                <div value="frontEnd" class="box-work" style="z-index: 3;" >
                     <div class="image">
                         <img src="img/web8.jpeg" alt="imagem trabalho">
                     </div>
                     <p>front-end</p>
                     <h2>Dentist Page</h2>
-                    <a target="_blank" href="img/web8.jpeg"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web8.jpeg">View Detalis</a>
                 </div><!-- box-work -->
 
-                <div value="frontEnd" class="box-work" style="z-index: 4;">
+                <div value="frontEnd" class="box-work" style="z-index: 4;" >
                     <div class="image">
                         <img src="img/web7.jpeg" alt="imagem trabalho">
                     </div>
                     <p>front-end</p>
                     <h2>Dealership Page</h2>
-                    <a target="_blank" href="img/web7.jpeg"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web7.jpeg">View Detalis</a>
                 </div><!-- box-work -->
 
                 <div value="frontEnd" class="box-work"style="z-index: 5;" >
@@ -193,34 +207,34 @@
                     </div>
                     <p>front-end</p>
                     <h2>Technology Services</h2>
-                    <a target="_blank" href="img/web6.jpeg"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web6.jpeg">View Detalis</a>
                 </div><!-- box-work -->
 
-                <div value="frontEnd" class="box-work" style="z-index: 6;">
+                <div value="frontEnd" class="box-work" style="z-index: 6;" >
                     <div class="image">
                         <img src="img/portfoliov3.png" alt="imagem trabalho">
                     </div>
                     <p>front-end</p>
                     <h2>Technology Agency</h2>
-                    <a target="_blank" href="https://www.figma.com/proto/hhrrlzsSVZKs90tOWRBwjJ/portf%C3%B3lio?node-id=0%3A1"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="https://www.figma.com/proto/hhrrlzsSVZKs90tOWRBwjJ/portf%C3%B3lio?node-id=0%3A1">View Detalis</a>
                 </div><!-- box-work -->
 
-                <div value="frontEnd" class="box-work" style="z-index: 7;">
+                <div value="frontEnd" class="box-work" style="z-index: 7;" >
                     <div class="image">
                         <img src="img/web3.jpeg" alt="imagem trabalho">
                     </div>
                     <p>front-end</p>
                     <h2>Page For Students</h2>
-                    <a target="_blank" href="img/web3.jpeg"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web3.jpeg">View Detalis</a>
                 </div><!-- box-work -->
 
-                <div value="frontEnd" class="box-work" style="z-index: 8;">
+                <div value="frontEnd" class="box-work" style="z-index: 8;" >
                     <div class="image">
                         <img src="img/web4.jpeg" alt="imagem trabalho">
                     </div>
                     <p>front-end</p>
                     <h2>Travel Page</h2>
-                    <a target="_blank" href="img/web4.jpeg"><p id="underline">View Detalis</p></a>
+                    <a target="_blank" href="img/web4.jpeg">View Detalis</a>
                 </div><!-- box-work -->
             </div><!-- box-works-single -->
 
@@ -247,7 +261,7 @@
 
         <div class="info-contact">
 
-            <div class="w50-info">
+            <div class="w50-info" data-aos="fade-up-right">
 
                 <div class="info-phone">
                     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -262,7 +276,7 @@
                 </div><!-- info-email -->
 
             </div><!-- w50-info -->
-            <div class="w50-info">
+            <div class="w50-info" data-aos="fade-up-right">
                 
             <div class="info-chat">
                 <i class="fa fa-comments" aria-hidden="true"></i>
@@ -274,7 +288,7 @@
 
                     <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNvwPHwNZpQRqnfPzZmdcsdxCqpgkrXJFtzSCSTdqXlCdbcNRzQCcPxJgbWPVFBhSfjhXV"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
 
-                    <a target="_blank" href="https://github.com/Guilherme-alexander"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://web.whatsapp.com/"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
                 </div><!-- social-media -->
             </div><!-- info-chat -->
 
@@ -293,8 +307,6 @@
         
         <h2>Guilherme Alexander</h2>
 
-        
-
         <p>Hello, i'm Guilherme Alexander this is my perfil profissional</p>
 
         <a target="_blank" href="https://www.linkedin.com/in/guilherme-alexander-b46959207/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
@@ -312,9 +324,14 @@
 </div> 
     <!-- Script -->
     <script src="js/Jquery.js"></script>
-    <script src="js/menu-scroll.js"></script>
-    <script src="js/script.js"></script>
-
+    <script src="js/menu-scroll.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay:100
+        });
+    </script>
 
 </body>
 </html>
